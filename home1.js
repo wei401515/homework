@@ -25,9 +25,8 @@ Array.prototype.myClone=function (callback,thisArg) {
 }
 Arr.myClone(function (value,index,arr) {
     var o=[];
-    arr.forEach(function (value,index) {
-        o[index]=value;
-    })
-    console.log(o)
-})
-;
+   for(var i=0;i<arr.length;i++){
+       o[i]=arr[i];
+   }
+    console.log(o);
+});
